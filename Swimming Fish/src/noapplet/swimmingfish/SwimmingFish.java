@@ -1,6 +1,5 @@
 package noapplet.swimmingfish;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -41,7 +40,7 @@ public class SwimmingFish extends NoApplet
 	/** The offset of how the fish will move on the x coordinate. */
 	private int offsetX = 2;
 	/** The offset of how the fish will move on the y coordinate. */
-	private int offsetY = -2;
+	private int offsetY = -1;
 	/** Stores the offset value of offsetY. */
 	private int tempOffsetY = offsetY;
 	
@@ -56,7 +55,7 @@ public class SwimmingFish extends NoApplet
 	
 	private Timer timer;
 	/** Delay of screen refreshes(in milliseconds). */
-	private int delay = 10;
+	private int delay = 12;
 	
 	public SwimmingFish(String[] params) 
 	{
@@ -113,7 +112,7 @@ public class SwimmingFish extends NoApplet
 	}
 
 	
-	/** Moves the fish image to the right and left of the window at constant speed. */
+	/** Moves the fish image to the right and left at constant speed. */
 	public void moveFishX()
 	{
 		// If the fish is off screen to the right, makes the fish start moving to the left.
